@@ -1,0 +1,114 @@
+
+<html>
+  <head>
+<style>
+ .nav {Background-color: black; Color: black; List-style: none; Text-align: center; Padding: 2% 0% 2% 0%; margin: 0% 0% 0% 0%}
+  .nav li {display: inline-block; padding-right: 4%}
+  .nav li a:hover {color: white}
+  .nav li a {color: orange; text-decoration: none}
+  .hledej {float:right; margin: 0% 5% 0% 0%}
+  .logo {margin: 0% 0% 0% 0%; float:left}
+  .footer-picture { padding: 5% 1% 0% 1%;}
+  .footer-text {float: left}
+  .article { width: 100%; Padding: 2% 10% 2% 5%;}
+.article p { font-size: 1.5vw; Color: black; Max-width: 240px; }
+.obrazek { padding: 5% 1% 0% 1%; }
+.reklama {font-size: 1.5vw; float:right; padding: 2% 2% 0% 2%;}
+table, th, td {
+  border: 1px solid black;
+}
+  </style>
+  </head>
+  <body>
+<ul class="nav">
+<div class="logo">
+<img src="ikona.png" alt="ikona" width= 60; height= 38>
+</div>
+
+<li><a href="hlavn%C3%AD%20str%C3%A1nka.html">Domů</a></li>
+<li><a href="O%20mn%C4%9B.html">O mně</a></li>
+<li><a href="Intel.html">Intel</a></li>
+<li><a href="procesory.html">Procesory</a></li>
+
+
+<div class="hledej">
+<form action="http://www.google.com/search">
+<input name="b" type="submit" value="Hledat">
+<input name="h" type="hidden" value="cs">
+<input type="text" value="" size="25" name="a" maxlenght="250">
+</form>
+</div>
+</ul> 
+<div class="banner">
+<img class="banner-picture" src="banner.png" atl="banner" width= 100% height= 200>
+<span class="nadpis" style="position:absolute; left:35%; right:35%">
+Intel</span>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+function Carousel ()
+{
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++)
+{
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<table>
+  <tr>
+   <td><div class="article" align="center">
+    <h1></h1>
+    <img class="article-picture" src="ikona.png" atl="logo" width=100 height= 100>
+    <p>Intel je největším světovým výrobcem polovodičových obvodů a dalších zařízení</p>
+    
+    <a href="https://cs.wikipedia.org/wiki/Intel"><button>Čti dále...</button></a>
+    </div>
+    </td>
+   <td><div class="article" align="center">
+    <h1></h1>
+    <img class="article-picture" src="images.jpg" atl="logo" width=100 height= 100>
+    <p>Má sídlo v kalifornským městě Santa Clara v USA</p>
+    
+    <a href="https://cs.wikipedia.org/wiki/Intel"><button>Čti dále...</button></a>
+    </div></td>
+   <td><div class="article" align="center">
+    <h1></h1>
+    <img class="article-picture" src="robert.jpg" atl="Noyce" width=100 height= 100>
+    <p>Robert Noyce byl jeden ze zakladatelů. Byl vynálezce integrovaného obvodu.</p>
+    
+    <a href="https://cs.wikipedia.org/wiki/Robert_Noyce"><button>Čti dále...</button></a>
+    </div></td>
+   <td><div class="article" align="center">
+    <h1></h1>
+    <img class="article-picture" src="gordor.jpg" atl="gondor" width=100 height= 100>
+    <p>Gordon Moore je vynálezce a podnikatel, jeden ze zakladatelů Silicon Valley.</p>
+    
+    <a href="https://cs.wikipedia.org/wiki/Robert_Noyce"><button>Čti dále...</button></a>
+    </div></td>
+  </tr>
+ </table>
+
+
+
+
+
+
+
+
+
+</div>
+  </body>
+    <div class="footer">
+<img class="footer-picture" src="obrazek.jpg" alt="obrazek" style="position:bottom:5px" width=100% height=200>
+<span class="footer-text" style="position:fixed; bottom:5px; 35px">
+&copyRohnisch 2020-2021</span>
+</html>
